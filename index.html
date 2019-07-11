@@ -13,34 +13,13 @@
 		<input class="button" type="submit" name="btn-submit" id="login" value="login">
 	</form>
 
-	 <table>
-  <th>accounts</th>
-</table>
+	<table  class="table">
+		<caption class="table-title">user accounts</caption>
+		<tr>
+			<th>username</th>
+			<th>password</th>
+		</tr>
+	</table>
 	<script src="main.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-<!--
-<input value="">
-<button>press</button>
-<table>
-  <th>accaunts</th>
-</table>
-
-
-var table = document.querySelector('table');
-var btn = document.querySelector('button');
-let inp = document.querySelector('input');
-btn.addEventListener('click', add);
-function add() {
-	let tr = document.createElement('tr');
-  tr.innerHTML = inp.value;
-  table.appendChild(tr);
-  inp.value = "";
-}
