@@ -1,2 +1,2 @@
 index.html, localstorage.js - works localStorage
-projfirebase.js, projfirebase.js - works firebase
+projfirebase.html, projfirebase.js - works firebase
