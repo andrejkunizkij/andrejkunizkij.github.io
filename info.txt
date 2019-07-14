@@ -1,2 +1,2 @@
-index.html, localstorage.js - работает localStorage
-projfirebase.js, projfirebase.js - подключение firebase
+index.html, localstorage.js - works localStorage
+projfirebase.js, projfirebase.js - works firebase
