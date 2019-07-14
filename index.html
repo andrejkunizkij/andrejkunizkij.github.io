@@ -5,8 +5,9 @@
 <title>form</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
+ 
 <body>
+
 	<form class="form">
 		<input class="form__input" type="text"  name="name" placeholder="username" required>
 		<input class="form__input input__pass" type="password"  name="password" placeholder="password" required>
@@ -14,12 +15,50 @@
 	</form>
 
 	<table  class="table">
-		<caption class="table-title">user accounts</caption>
+		 <caption class="table-title">user accounts</caption> 
 		<tr>
 			<th>username</th>
 			<th>password</th>
 		</tr>
 	</table>
-	<script src="main.js"></script>
+
+	<script src="localstorage.js"></script>
+	<!-- <script src="projfirebase.js"></script> -->
+
+
+
+
+	<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
+	<script src='https://www.gstatic.com/firebasejs/6.3.0/firebase.js'></script>
+
+	<script>
+		// Your web app's Firebase configuration
+		  var firebaseConfig = {
+    		apiKey: "AIzaSyCgR_klUqaRrZWsH_Yw8SBJ3_PXyFkeZZM",
+   			 authDomain: "newtable-5772c.firebaseapp.com",
+    		databaseURL: "https://newtable-5772c.firebaseio.com",
+    		projectId: "newtable-5772c",
+    		storageBucket: "",
+    		messagingSenderId: "928266722541",
+    		appId: "1:928266722541:web:c7462c02875e06a8"
+ 		 };
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+		 var database = firebase.database();
+
+
+		firebase.auth().signInAnonymously().catch(function(error) {
+			// Handle Errors here.
+			var errorCode = error.code;
+			var errorMessage = error.message;
+			// ...
+		});
+	</script>
+	<!--<script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-firestore.js"></script>
+	<script src='https://www.gstatic.com/firebasejs/6.3.0/firebase.js'></script>-->
+
+
 </body>
 </html>
